@@ -14,7 +14,7 @@ def load_library(file)
   return emoticon
 end
 
-# emoticon == english version emoticon 
+# emoticon == english emoticon 
 def get_japanese_emoticon(file, emoticon)
   emoticon_hash = load_library(file)
   emoticon_hash.each do |key, value|
@@ -27,6 +27,7 @@ def get_japanese_emoticon(file, emoticon)
   return "Sorry, that emoticon was not found"
 end
 
+# emoticon == japanese emoticon
 def get_english_meaning(file, emoticon)
   emoticon_hash = load_library(file)
   
